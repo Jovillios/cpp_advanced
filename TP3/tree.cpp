@@ -11,6 +11,17 @@ Tree::Tree(double h) {
     this->height = h;
 }
 
+Tree::Tree(bool e) {
+    std::cout << "Creating a new tree" << std::endl;
+    this->evergreen = e;
+}
+
+Tree::Tree(bool e, double h) {
+    std::cout << "Creating a new tree" << std::endl;
+    this->evergreen = e;
+    this->height = h;
+}
+
 Tree::~Tree() {
     std::cout << "Destroying a tree" << std::endl;
 }

@@ -6,14 +6,16 @@ class Tree {
     public:
         Tree();
         Tree(double h);
-        ~Tree();
-        void draw();
-        void info();
+        Tree(bool e);
+        Tree(bool e, double h);
+        virtual ~Tree();
+        virtual void draw();
+        virtual void info();
         void setHeight(double h);
         double getHeight() const;
         void setEvergreen(bool e);
         bool isEvergreen() const;
-    private:
+    protected:
         bool evergreen;
         double height;
 };
